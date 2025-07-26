@@ -7,7 +7,7 @@ This project is part of the Data Science Internship at Arch Technologies. The go
 
 ---
 
-📁 Dataset
+## 📁 Dataset
 
 The dataset is downloaded using the `yfinance` Python library and includes:
 
@@ -21,7 +21,7 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-📊 Technologies Used
+## 📊 Technologies Used
 
 - Python 🐍  
 - Jupyter Notebook  
@@ -33,21 +33,21 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-✅ Project Steps
+## ✅ Project Steps
 
-### 🔹 Data Collection & Cleaning
+**🔹 Data Collection & Cleaning**
 
 - Downloaded 5 years of AAPL stock data using `yfinance`
 - Removed missing values
 - Focused on features: `Open`, `High`, `Low`, `Volume` → Predicting `Close`
 
-### 🔹 Exploratory Data Analysis (EDA)
+**🔹 Exploratory Data Analysis (EDA)**
 
 - Correlation heatmap  
 - Line plots for price trends  
 - Residual plot for error analysis  
 
-### 🔹 Feature Engineering
+**🔹 Feature Engineering**
 
 - Time-based train-test split (80/20)
 - Sequence creation for LSTM (60-day sliding window)
@@ -55,9 +55,9 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-🧠 Model Training
+##🧠 Model Training
 
-### 📘 Model 1: Linear Regression
+**📘 Model 1: Linear Regression**
 
 - Used Scikit-learn's `LinearRegression`
 - Trained on selected features
@@ -67,7 +67,7 @@ The dataset is downloaded using the `yfinance` Python library and includes:
   - Actual vs Predicted Plot
   - Residual Distribution Plot
 
-### 📗 Model 2: LSTM Neural Network
+**📗 Model 2: LSTM Neural Network**
 
 - Built using TensorFlow / Keras
 - Two LSTM layers + Dense output layer
@@ -79,7 +79,7 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-📈 Model Performance
+## 📈 Model Performance
 
 | Metric       | Linear Regression | LSTM Model |
 |--------------|------------------:|-----------:|
@@ -90,7 +90,7 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-📂 Files in this Repo
+## 📂 Files in this Repo
 
 | File                     | Description                                |
 |--------------------------|--------------------------------------------|
@@ -100,7 +100,7 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-✍️ Author
+## ✍️ Author
 
 **Ayesha Nadeem**  
 Data Science Intern – July 2025  
@@ -108,7 +108,7 @@ Arch Technologies
 
 ---
 
-📧 Contact
+## 📧 Contact
 
 For technical issues or feedback:  
 📩 **ayeshanadeem2408@gmail.com**
