@@ -1,6 +1,6 @@
-📈 Stock Price Prediction – AAPL (Apple Inc.)
+🚀 Stock Price Prediction – AAPL (Apple Inc.)
 
-This project is part of the Data Science Internship at Arch Technologies. The goal is to predict the **future closing stock prices** of Apple Inc. (AAPL) using historical stock data. Two different models are used for comparison:
+This project is part of the Data Science Internship at Arch Technologies. The goal is to predict the **future closing stock prices** of Apple Inc. (AAPL) using historical stock data. Two different models are used for performance comparison:
 
 - ✅ Linear Regression (Classical Machine Learning)
 - 🔁 LSTM (Long Short-Term Memory – Deep Learning)
@@ -11,12 +11,13 @@ This project is part of the Data Science Internship at Arch Technologies. The go
 
 The dataset is downloaded using the `yfinance` Python library and includes:
 
-- Open
-- High
-- Low
-- Close (Target)
+- Open  
+- High  
+- Low  
+- Close (Target)  
 - Volume  
-- Time range: **January 1, 2020 – January 1, 2025**
+
+🗓️ Time Range: January 1, 2020 – January 1, 2025
 
 ---
 
@@ -34,38 +35,47 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ✅ Project Steps
 
-### 📊 Data Collection & Cleaning
+### 🔹 Data Collection & Cleaning
+
 - Downloaded 5 years of AAPL stock data using `yfinance`
 - Removed missing values
-- Focused on relevant features: `Open`, `High`, `Low`, `Volume` to predict `Close`
+- Focused on features: `Open`, `High`, `Low`, `Volume` → Predicting `Close`
 
----
+### 🔹 Exploratory Data Analysis (EDA)
 
-### 🧠 Feature Engineering & EDA
+- Correlation heatmap  
+- Line plots for price trends  
+- Residual plot for error analysis  
+
+### 🔹 Feature Engineering
+
 - Time-based train-test split (80/20)
-- Correlation heatmap
-- Line plots for trend analysis
-- Residual analysis (for Linear Regression)
+- Sequence creation for LSTM (60-day sliding window)
+- Scaling features using MinMaxScaler for LSTM
 
 ---
 
-### ⚙️ Model Training
+🧠 Model Training
 
-#### Model 1: Linear Regression
+### 📘 Model 1: Linear Regression
+
 - Used Scikit-learn's `LinearRegression`
-- Trained on time-sorted data
-- Evaluated using:
+- Trained on selected features
+- Evaluation Metrics:
   - MSE, RMSE, MAE, R² Score
-- Plotted **Actual vs Predicted** Closing Prices
-- Residual plot for error distribution
+- Visualizations:
+  - Actual vs Predicted Plot
+  - Residual Distribution Plot
 
-#### Model 2: LSTM (Deep Learning)
-- Used TensorFlow/Keras to build a 2-layer LSTM model
-- Scaled data using `MinMaxScaler`
-- Created 60-day input sequences
-- Evaluated using:
+### 📗 Model 2: LSTM Neural Network
+
+- Built using TensorFlow / Keras
+- Two LSTM layers + Dense output layer
+- Trained on sequential, scaled data
+- Evaluation Metrics:
   - MSE, RMSE, MAE
-- Plotted **Actual vs Predicted** using time-series aligned data
+- Visualizations:
+  - Actual vs Predicted Trend Plot
 
 ---
 
@@ -73,10 +83,10 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 | Metric       | Linear Regression | LSTM Model |
 |--------------|------------------:|-----------:|
-| MAE          | ✔️ Lower          | ✅ Lower   |
-| RMSE         | ✔️ Moderate       | ✅ Better  |
-| R² Score     | 📉 Basic Fit      | ✅ Good Fit |
-| Visual Match | 📉 Line mismatch (random split) | ✅ Trend match |
+| MAE          | 📉 Moderate        | ✅ Lower   |
+| RMSE         | 📉 Higher          | ✅ Lower   |
+| R² Score     | 📉 Basic Fit       | ✅ Stronger Fit |
+| Visual Match | ❌ Random mismatch | ✅ Trend aligned |
 
 ---
 
