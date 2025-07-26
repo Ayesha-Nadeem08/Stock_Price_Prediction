@@ -1,4 +1,4 @@
-🚀 Stock Price Prediction – AAPL (Apple Inc.)
+# 🚀 Stock Price Prediction – AAPL (Apple Inc.)
 
 This project is part of the Data Science Internship at Arch Technologies. The goal is to predict the **future closing stock prices** of Apple Inc. (AAPL) using historical stock data. Two different models are used for performance comparison:
 
