@@ -55,14 +55,16 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 
 ---
 
-##🧠 Model Training
+## 🧠 Model Training
 
 **📘 Model 1: Linear Regression**
 
 - Used Scikit-learn's `LinearRegression`
 - Trained on selected features
+
 - Evaluation Metrics:
   - MSE, RMSE, MAE, R² Score
+
 - Visualizations:
   - Actual vs Predicted Plot
   - Residual Distribution Plot
@@ -72,8 +74,10 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 - Built using TensorFlow / Keras
 - Two LSTM layers + Dense output layer
 - Trained on sequential, scaled data
+
 - Evaluation Metrics:
   - MSE, RMSE, MAE
+
 - Visualizations:
   - Actual vs Predicted Trend Plot
 
@@ -96,7 +100,6 @@ The dataset is downloaded using the `yfinance` Python library and includes:
 |--------------------------|--------------------------------------------|
 | `Stock_Prediction.ipynb` | Main notebook with both models             |
 | `README.md`              | Project summary and model explanation      |
-| `AAPL_data.csv` (optional) | Raw downloaded data (if saved)             |
 
 ---
 
